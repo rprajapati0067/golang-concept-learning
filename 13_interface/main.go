@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
 	"math"
+	"net/http"
 )
 
 type MyString string
@@ -51,6 +53,9 @@ func (c Cube) Volume() float64 {
 }
 
 func explain(i interface{}) {
+	http.Get()
+
+
 	fmt.Printf("Value given to explain func is of type '%T' with value %v\n", i, i)
 }
 
@@ -61,7 +66,22 @@ func main() {
 	//
 	//fmt.Println("Value of s is", s)
 	//fmt.Printf("Type of s is %T\n", s)
-	//fmt.Println("Area of rectangle s", s.Area())
+	//fmt.Println("Area of rectangle s", s.Area())--+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	//fmt.Println("s == r  is", s == r)
 
 	//ms := MyString("Hello World")
